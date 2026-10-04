@@ -1,0 +1,26 @@
+{
+  "name": "llm-gemini-3.5-flash-lite-open-3shot",
+  "rejection_recall": 0.025,
+  "rejection_recall_lenient": 0.025,
+  "retention": 1.0,
+  "known_accuracy": 0.9538461538461539,
+  "per_holdout_class": {
+    "yard_management": 0.05,
+    "document_processing": 0.0
+  },
+  "unknowns_routed_to": {
+    "appointment_manager": 21,
+    "knowledge_base": 19,
+    "shipment_information.realtime_query": 13,
+    "ai_agent_performance": 12,
+    "customer_support": 8,
+    "shipment_information.analytics": 5,
+    "unknown": 2
+  },
+  "usage": {
+    "mean_in_tokens": 1145.606896551724,
+    "mean_out_tokens": 4.489655172413793,
+    "latency_p50_s": 1.1564896250001766,
+    "latency_p95_s": 1.643487517199537
+  }
+}

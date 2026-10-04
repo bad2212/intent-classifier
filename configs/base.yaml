@@ -1,0 +1,25 @@
+# Shared fine-tuning recipe (decisions.md D-07, D-08). Per-run values are overridden with --set key=value.
+name: base
+model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+lr: 5.0e-5
+epochs: 15            # max epochs; single mode early-stops on val macro-F1
+batch_size: 16
+warmup_ratio: 0.1
+weight_decay: 0.01
+max_length: 64        # max observed length is 36 XLM-R tokens
+class_weights: true   # inverse-frequency weighted cross-entropy (imbalance 1.83x)
+label_smoothing: 0.0  # off: it compresses logits and hurts confidence-based OOD (G4)
+patience: 3           # early stopping (single mode only)
+seed: 42
+holdout_classes: []   # Track B: classes removed from train AND val
+retention_target: 0.95  # reject threshold = keep 95% of known-class val inputs
+cv_folds_limit: null  # smoke tests only: run the first N folds
+cpu: false            # true = deterministic CPU run (MPS is not bit-reproducible)
+wandb_project: intent-classifier
+wandb_entity: null    # default entity = team badalthakur2212-iisc (private-only; personal entity cannot host projects on this account — share via report link / invite)
+# stretch options (all off by default; see plan.md §7)
+hier_lambda: 0.0      # S3 hierarchical parent-loss weight
+oe_lambda: 0.0        # S1b Outlier Exposure weight
+oe_file: data/aux/oe_outliers_screened.csv
+augment: []           # S4: [noise], [translate] or [noise, translate] (train rows only, D-23)
+aug_copies: 1         # noise copies per training row

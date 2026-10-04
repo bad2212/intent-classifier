@@ -1,0 +1,9 @@
+{
+  "device": "cpu",
+  "threads": 4,
+  "params_M": 278,
+  "batch1_p50_ms": 24.560187501265318,
+  "batch1_p95_ms": 29.570398549731177,
+  "batch32_ms_per_msg": 5.323270637498467,
+  "throughput_msgs_per_s_batch32": 187.85443538334246
+}

@@ -1,0 +1,109 @@
+text,topic,lang
+can you get me a rate quote for a new lane from Reno to Boise next month,rate_quote,en
+need a spot price for a 53ft dry van Chicago to Atlanta for friday,rate_quote,en
+what would it cost to move 18 pallets from El Paso to Denver as LTL,rate_quote,en
+quote me reefer rates for a weekly lane Fresno to Salt Lake,rate_quote,en
+pls price out a flatbed load Houston to Tulsa for tomorrow,rate_quote,en
+is the contract rate for our Memphis-Nashville lane still below market,rate_quote,en
+generate a quote for an expedited team truck Detroit to Laredo,rate_quote,en
+cotización para una carga completa de Monterrey a Dallas la próxima semana,rate_quote,es
+calculate the carbon footprint of our outbound freight for our ESG report,emissions,en
+how much CO2 would we save by switching the Phoenix lane to intermodal,emissions,en
+set up carbon offset purchases for every shipment over 500 miles,emissions,en
+export our scope 3 transport emissions in the GHG protocol format,emissions,en
+which carriers have SmartWay certification and the lowest emissions intensity,emissions,en
+can you create a sustainability dashboard with emissions per ton-mile,emissions,en
+quelles sont nos émissions de CO2 liées au transport ce trimestre pour le rapport RSE,emissions,fr
+onboard a new carrier called Blue Ridge Freight with MC number 884421,carrier_onboarding,en
+check whether carrier Apex Haulers has active operating authority and a satisfactory safety rating,carrier_onboarding,en
+start the vetting process for three new regional carriers in Ohio,carrier_onboarding,en
+what's the minimum cargo liability coverage we require from new carriers,carrier_onboarding,en
+add a backup carrier to our approved list for the Seattle region,carrier_onboarding,en
+flag any carriers whose FMCSA authority was revoked this week,carrier_onboarding,en
+neuen Frachtführer anlegen und Versicherungsnachweis prüfen,carrier_onboarding,de
+I want to file a freight claim for 6 pallets that arrived crushed,claims,en
+how do we open a loss claim against the carrier for a missing shipment,claims,en
+status of our cargo damage claim number CLM-20931,claims,en
+the consignee refused 2 cases due to water damage — start a claim pls,claims,en
+what's the deadline to submit a concealed damage claim under Carmack,claims,en
+calculate the claim amount for the broken glassware on that delivery,claims,en
+quiero presentar una reclamación por mercancía dañada en el envío de ayer,claims,es
+how many units of SKU 44812 do we have on hand across all warehouses,inventory,en
+which products are below their reorder point right now,inventory,en
+show stock levels for frozen goods in the Columbus facility,inventory,en
+forecast when we'll run out of packaging material at the Reno site,inventory,en
+transfer 300 units of item A-220 from Dallas to Atlanta inventory,inventory,en
+what's our inventory turnover for the beverage category,inventory,en
+combien d'unités de l'article 5521 reste-t-il en stock à Lille,inventory,fr
+plan the most efficient route for 7 stops in the Bay Area tomorrow morning,route_planning,en
+optimize our milk run so trucks come back fuller,route_planning,en
+build a multi-stop route for the new store openings in Arizona,route_planning,en
+can you consolidate these 4 LTL orders into one truckload route,route_planning,en
+suggest a cheaper routing for the Toronto deliveries that avoids tolls,route_planning,en
+redesign our delivery zones around the new hub in Indianapolis,route_planning,en
+planifica la mejor ruta para cinco entregas en Guadalajara mañana,route_planning,es
+approve the detention charge the carrier added to their freight bill,freight_payment,en
+pay the carrier for load 88213 using quick pay,freight_payment,en
+why was the fuel surcharge on our last payment so high,freight_payment,en
+set up automatic freight payment terms of net 30 for our top carriers,freight_payment,en
+reconcile accessorial fees we were charged last month against the contract,freight_payment,en
+dispute a lumper fee that the carrier billed us twice,freight_payment,en
+how much did we pay carriers in total for accessorials this year,freight_payment,en
+Zahlung an den Spediteur für die letzte Lieferung freigeben,freight_payment,de
+how many driving hours does driver Mike Torres have left today,driver_compliance,en
+which drivers are close to violating hours of service rules this week,driver_compliance,en
+schedule drug and alcohol testing for our new owner-operators,driver_compliance,en
+renew the CDL medical card reminder for all our drivers,driver_compliance,en
+show ELD log violations for our private fleet last month,driver_compliance,en
+assign a team of drivers to the overnight run to Miami,driver_compliance,en
+create a new load and tender it to our contract carriers,tendering,en
+post this load to the spot market load board,tendering,en
+send the Kansas City lanes out for bid to five carriers,tendering,en
+auto-accept the lowest bid if it's under 2 dollars per mile,tendering,en
+cancel the tender I sent to Swift and give it to the next carrier,tendering,en
+build a waterfall tender sequence for our new Midwest lanes,tendering,en
+crea una nueva carga y ofrécela a los transportistas del contrato,tendering,es
+what HS code should we use for lithium battery packs,customs_trade,en
+estimate import duties for a container of steel fasteners from Vietnam,customs_trade,en
+are our auto parts eligible for USMCA preferential tariff treatment,customs_trade,en
+screen this consignee against the denied parties list,customs_trade,en
+how do the new tariffs on Chinese electronics change our landed cost,customs_trade,en
+classify our new product line for export control purposes,customs_trade,en
+这批货物从深圳进口需要缴纳多少关税,customs_trade,zh
+launch an RFP for our 2027 truckload lanes,procurement,en
+compare the bids we got for the Southeast lanes and recommend awards,procurement,en
+which carriers should we award the Q3 contract to based on cost and service,procurement,en
+model the savings if we shift 20% of volume to a second carrier,procurement,en
+renegotiate rates with carriers whose contracts expire next month,procurement,en
+set up a mini-bid for our seasonal produce lanes,procurement,en
+lancer un appel d'offres pour nos lignes de transport en Europe,procurement,fr
+book a container on the next vessel from Shanghai to Long Beach,ocean_booking,en
+reserve space on an air freight flight from Frankfurt to Chicago,ocean_booking,en
+how much is a 40ft container from Rotterdam to New York right now,ocean_booking,en
+switch our booking with Maersk to a later sailing,ocean_booking,en
+get me a freight forwarder for a shipment to Brazil,ocean_booking,en
+buchen Sie einen Container von Hamburg nach Shanghai für nächste Woche,ocean_booking,de
+predict next quarter's freight volume so we can plan capacity,demand_forecast,en
+forecast truck demand for the holiday peak by region,demand_forecast,en
+how many trucks will we need in March based on seasonal trends,demand_forecast,en
+simulate the impact of a 15% sales increase on our transport budget,demand_forecast,en
+build a capacity plan for our new distribution center,demand_forecast,en
+estimate how many pallets we'll ship next month for the new product launch,demand_forecast,en
+set up a geofence alert when the reefer temperature goes above 38F,iot_sensors,en
+pair the new temperature sensors with our trailers' telematics units,iot_sensors,en
+calibrate the humidity sensors on the pharma shipments,iot_sensors,en
+which IoT devices have a low battery and need replacing,iot_sensors,en
+configure shock sensors on our fragile electronics shipments,iot_sensors,en
+integrate our telematics provider so we get engine diagnostics,iot_sensors,en
+schedule preventive maintenance for truck 214 next week,fleet_maintenance,en
+which tractors are overdue for an oil change,fleet_maintenance,en
+log a repair for the broken liftgate on unit 77,fleet_maintenance,en
+what's the total maintenance cost per truck for our private fleet,fleet_maintenance,en
+find a tire shop near our driver stuck outside Amarillo,fleet_maintenance,en
+programar mantenimiento preventivo para el camión 305,fleet_maintenance,es
+create a return label for the defective items the customer sent back,returns,en
+how many returns did we process at the reverse logistics center,returns,en
+set up a pickup for 30 returned cartons from the Portland store,returns,en
+route customer returns to the refurbishment vendor instead of the DC,returns,en
+what's our return rate for the electronics category,returns,en
+organiser le retour des produits défectueux du client à Bordeaux,returns,fr

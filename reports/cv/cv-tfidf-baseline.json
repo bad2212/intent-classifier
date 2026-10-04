@@ -1,0 +1,90 @@
+{
+  "config": {
+    "model": "tfidf_char2-5+word1-2_logreg",
+    "C": 0.3
+  },
+  "best": {
+    "epoch": null,
+    "pooled_macro_f1": 0.7278274813075943,
+    "pooled_accuracy": 0.7470449172576832,
+    "fold_macro_f1_mean": 0.7264069446977645,
+    "fold_macro_f1_std": 0.029176122613957554,
+    "non_english_accuracy": 0.4807692307692308,
+    "english_accuracy": 0.784366576819407,
+    "coarse_accuracy": 0.7801418439716312
+  },
+  "per_class_at_best": {
+    "ai_agent_performance": {
+      "precision": 0.8462,
+      "recall": 0.9706,
+      "f1": 0.9041,
+      "support": 34.0
+    },
+    "appointment_manager": {
+      "precision": 0.725,
+      "recall": 0.7632,
+      "f1": 0.7436,
+      "support": 38.0
+    },
+    "chitchat": {
+      "precision": 0.7714,
+      "recall": 0.9,
+      "f1": 0.8308,
+      "support": 30.0
+    },
+    "customer_support": {
+      "precision": 0.64,
+      "recall": 0.4706,
+      "f1": 0.5424,
+      "support": 34.0
+    },
+    "document_processing": {
+      "precision": 0.8571,
+      "recall": 0.7059,
+      "f1": 0.7742,
+      "support": 34.0
+    },
+    "knowledge_base": {
+      "precision": 0.6176,
+      "recall": 0.6176,
+      "f1": 0.6176,
+      "support": 34.0
+    },
+    "orders": {
+      "precision": 0.825,
+      "recall": 0.8684,
+      "f1": 0.8462,
+      "support": 38.0
+    },
+    "other": {
+      "precision": 0.6364,
+      "recall": 0.28,
+      "f1": 0.3889,
+      "support": 25.0
+    },
+    "shipment_information.analytics": {
+      "precision": 0.72,
+      "recall": 0.8,
+      "f1": 0.7579,
+      "support": 45.0
+    },
+    "shipment_information.disruptions": {
+      "precision": 0.6571,
+      "recall": 0.7667,
+      "f1": 0.7077,
+      "support": 30.0
+    },
+    "shipment_information.realtime_query": {
+      "precision": 0.7308,
+      "recall": 0.8085,
+      "f1": 0.7677,
+      "support": 47.0
+    },
+    "yard_management": {
+      "precision": 0.8529,
+      "recall": 0.8529,
+      "f1": 0.8529,
+      "support": 34.0
+    }
+  }
+}

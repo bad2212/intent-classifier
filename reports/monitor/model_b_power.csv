@@ -1,0 +1,9 @@
+window,traffic,confidence drift,unknown rate,intent mix drift,language mix drift,embedding drift,any
+65,clean,0.0,0.0,0.025,0.0,0.025,0.025
+65,40% unknown,0.3,0.375,0.075,0.0,0.075,0.6
+130,clean,0.0,0.0,0.0,0.025,0.0,0.025
+130,40% unknown,0.45,0.575,0.6,0.0,0.55,0.9
+260,clean,0.0,0.025,0.0,0.0,0.0,0.025
+260,40% unknown,0.825,0.975,1.0,0.0,1.0,1.0
+520,clean,0.0,0.025,0.025,0.075,0.0,0.125
+520,40% unknown,0.875,1.0,1.0,0.0,1.0,1.0

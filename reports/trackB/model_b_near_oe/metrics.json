@@ -1,0 +1,167 @@
+{
+  "run": "model_b_near_oe",
+  "holdout_classes": [
+    "shipment_information.disruptions"
+  ],
+  "retention_target": 0.95,
+  "n_known_test": 72,
+  "n_unknown": 35,
+  "known_test_10way": {
+    "macro_f1": 0.9260083444716148,
+    "accuracy": 0.9305555555555556,
+    "n": 72
+  },
+  "unknowns_argmax_distribution": {
+    "shipment_information.realtime_query": 22,
+    "shipment_information.analytics": 7,
+    "customer_support": 3,
+    "yard_management": 2,
+    "appointment_manager": 1
+  },
+  "scorers": [
+    {
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.8734126984126984,
+      "AUPR_unknown": 0.7483613518492864,
+      "unknown_accepted@95%retention(oracle)": 0.5142857142857142,
+      "tau(val)": -0.2846563458442688,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9722222222222222,
+      "rejection_recall_strict": 0.4857142857142857,
+      "rejection_recall_lenient": 0.4857142857142857,
+      "rejection_recall[shipment_information.disruptions]": 0.4857142857142857
+    },
+    {
+      "scorer": "MSP + temperature",
+      "AUROC": 0.8563492063492064,
+      "AUPR_unknown": 0.7291991672718259,
+      "unknown_accepted@95%retention(oracle)": 0.5428571428571428,
+      "tau(val)": -0.5788450241088867,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9583333333333334,
+      "rejection_recall_strict": 0.4,
+      "rejection_recall_lenient": 0.4,
+      "rejection_recall[shipment_information.disruptions]": 0.4
+    },
+    {
+      "scorer": "max-logit",
+      "AUROC": 0.8825396825396825,
+      "AUPR_unknown": 0.7633765320094935,
+      "unknown_accepted@95%retention(oracle)": 0.5142857142857142,
+      "tau(val)": -1.4504443407058716,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9583333333333334,
+      "rejection_recall_strict": 0.4857142857142857,
+      "rejection_recall_lenient": 0.4857142857142857,
+      "rejection_recall[shipment_information.disruptions]": 0.4857142857142857
+    },
+    {
+      "scorer": "energy",
+      "AUROC": 0.8928571428571428,
+      "AUPR_unknown": 0.7692943316517944,
+      "unknown_accepted@95%retention(oracle)": 0.5714285714285714,
+      "tau(val)": -2.666088819503784,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9305555555555556,
+      "rejection_recall_strict": 0.4857142857142857,
+      "rejection_recall_lenient": 0.4857142857142857,
+      "rejection_recall[shipment_information.disruptions]": 0.4857142857142857
+    },
+    {
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8634920634920634,
+      "AUPR_unknown": 0.6662263980729172,
+      "unknown_accepted@95%retention(oracle)": 0.8285714285714286,
+      "tau(val)": 10894.400390625,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9166666666666666,
+      "rejection_recall_strict": 0.37142857142857144,
+      "rejection_recall_lenient": 0.37142857142857144,
+      "rejection_recall[shipment_information.disruptions]": 0.37142857142857144
+    },
+    {
+      "scorer": "kNN k=1 [cls]",
+      "AUROC": 0.8706349206349205,
+      "AUPR_unknown": 0.718511615861655,
+      "unknown_accepted@95%retention(oracle)": 0.5714285714285714,
+      "tau(val)": -0.7564427852630615,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9166666666666666,
+      "rejection_recall_strict": 0.4857142857142857,
+      "rejection_recall_lenient": 0.4857142857142857,
+      "rejection_recall[shipment_information.disruptions]": 0.4857142857142857
+    },
+    {
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8611111111111112,
+      "AUPR_unknown": 0.7121952013667229,
+      "unknown_accepted@95%retention(oracle)": 0.5714285714285714,
+      "tau(val)": -0.6331366896629333,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9722222222222222,
+      "rejection_recall_strict": 0.2857142857142857,
+      "rejection_recall_lenient": 0.2857142857142857,
+      "rejection_recall[shipment_information.disruptions]": 0.2857142857142857
+    },
+    {
+      "scorer": "kNN k=10 [cls]",
+      "AUROC": 0.8587301587301587,
+      "AUPR_unknown": 0.7113476395079912,
+      "unknown_accepted@95%retention(oracle)": 0.5142857142857142,
+      "tau(val)": -0.6203392148017883,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9722222222222222,
+      "rejection_recall_strict": 0.3142857142857143,
+      "rejection_recall_lenient": 0.3142857142857143,
+      "rejection_recall[shipment_information.disruptions]": 0.3142857142857143
+    },
+    {
+      "scorer": "Mahalanobis [mean]",
+      "AUROC": 0.8543650793650793,
+      "AUPR_unknown": 0.6426406497926951,
+      "unknown_accepted@95%retention(oracle)": 0.8,
+      "tau(val)": 8584.25390625,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.875,
+      "rejection_recall_strict": 0.5428571428571428,
+      "rejection_recall_lenient": 0.5428571428571428,
+      "rejection_recall[shipment_information.disruptions]": 0.5428571428571428
+    },
+    {
+      "scorer": "kNN k=1 [mean]",
+      "AUROC": 0.8654761904761905,
+      "AUPR_unknown": 0.7016961854320122,
+      "unknown_accepted@95%retention(oracle)": 0.5428571428571428,
+      "tau(val)": -0.7089359164237976,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9305555555555556,
+      "rejection_recall_strict": 0.45714285714285713,
+      "rejection_recall_lenient": 0.45714285714285713,
+      "rejection_recall[shipment_information.disruptions]": 0.45714285714285713
+    },
+    {
+      "scorer": "kNN k=5 [mean]",
+      "AUROC": 0.8555555555555555,
+      "AUPR_unknown": 0.6933862655654793,
+      "unknown_accepted@95%retention(oracle)": 0.6,
+      "tau(val)": -0.6452974081039429,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9444444444444444,
+      "rejection_recall_strict": 0.42857142857142855,
+      "rejection_recall_lenient": 0.42857142857142855,
+      "rejection_recall[shipment_information.disruptions]": 0.42857142857142855
+    },
+    {
+      "scorer": "kNN k=10 [mean]",
+      "AUROC": 0.8531746031746031,
+      "AUPR_unknown": 0.6870611115957214,
+      "unknown_accepted@95%retention(oracle)": 0.6285714285714286,
+      "tau(val)": -0.6316797137260437,
+      "val_retention": 0.9577464788732394,
+      "test_retention": 0.9444444444444444,
+      "rejection_recall_strict": 0.42857142857142855,
+      "rejection_recall_lenient": 0.42857142857142855,
+      "rejection_recall[shipment_information.disruptions]": 0.42857142857142855
+    }
+  ]
+}

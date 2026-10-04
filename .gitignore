@@ -1,0 +1,40 @@
+# Confidential inputs: the dataset is never published
+data/raw/
+*.pdf
+
+# Per-row data derived from the dataset (ids, labels, languages, predictions) -> regenerate locally
+data/splits/
+reports/cv/*_oof.csv
+reports/cv/overlapped_G39/
+
+# Local working notes -> not published
+plan.md
+decisions.md
+setup_accounts.md
+
+# Text-bearing outputs (quote dataset messages) -> local only
+reports/eda/summary.md
+reports/eda/near_duplicates.csv
+reports/**/errors_*.csv
+data/aux/translations.csv
+outputs/llm_cache.jsonl
+reports/report.md
+reports/report.html
+
+# Environment / secrets
+.venv/
+.env
+*.key
+
+# Training outputs (large)
+outputs/
+wandb/
+*.safetensors
+*.bin
+checkpoint-*/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

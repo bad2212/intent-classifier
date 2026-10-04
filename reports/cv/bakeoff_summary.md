@@ -1,0 +1,8 @@
+| name             | model                                 |   lr |   params_M |   best_epoch |   oof_macro_f1 |   fold_std |   oof_accuracy |   non_en_acc |   en_acc |   coarse_acc | top_two   |
+|:-----------------|:--------------------------------------|-----:|-----------:|-------------:|---------------:|-----------:|---------------:|-------------:|---------:|-------------:|:----------|
+| cv-mpnet-lr5e-5  | paraphrase-multilingual-mpnet-base-v2 |    0 |        278 |            7 |          0.92  |      0.028 |          0.92  |        0.942 |    0.916 |        0.924 | True      |
+| cv-xlmr-lr5e-5   | xlm-roberta-base                      |    0 |        278 |           11 |          0.908 |      0.029 |          0.91  |        0.923 |    0.908 |        0.91  | True      |
+| cv-xlmr-lr2e-5   | xlm-roberta-base                      |    0 |        278 |           14 |          0.9   |      0.024 |          0.898 |        0.904 |    0.898 |        0.905 | False     |
+| cv-mpnet-lr2e-5  | paraphrase-multilingual-mpnet-base-v2 |    0 |        278 |            9 |          0.894 |      0.031 |          0.894 |        0.923 |    0.889 |        0.908 | False     |
+| cv-minilm-lr5e-5 | paraphrase-multilingual-MiniLM-L12-v2 |    0 |        118 |           12 |          0.894 |      0.029 |          0.894 |        0.885 |    0.895 |        0.898 | False     |
+| cv-minilm-lr2e-5 | paraphrase-multilingual-MiniLM-L12-v2 |    0 |        118 |           15 |          0.866 |      0.025 |          0.868 |        0.885 |    0.865 |        0.889 | False     |

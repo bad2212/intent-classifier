@@ -1,0 +1,371 @@
+{
+  "baseline_cv": "cv-mpnet-lr5e-5",
+  "cv_variants": [
+    {
+      "variant": "aug-idswap",
+      "folds": 5,
+      "macro_f1": 0.8931048832149174,
+      "baseline_same_folds": 0.919647191278988,
+      "mean_paired_diff": -0.026841483679719013,
+      "folds_better": "0/5",
+      "non_en_acc": 0.9230769230769231,
+      "baseline_non_en_acc": 0.9423076923076923,
+      "other_f1": 0.8936170212765957,
+      "baseline_other_f1": 0.9387755102040817,
+      "verdict": "hurts"
+    },
+    {
+      "variant": "aug-noise",
+      "folds": 5,
+      "macro_f1": 0.9045069056372158,
+      "baseline_same_folds": 0.919647191278988,
+      "mean_paired_diff": -0.015352616652926199,
+      "folds_better": "2/5",
+      "non_en_acc": 0.9423076923076923,
+      "baseline_non_en_acc": 0.9423076923076923,
+      "other_f1": 0.9166666666666666,
+      "baseline_other_f1": 0.9387755102040817,
+      "verdict": "hurts"
+    },
+    {
+      "variant": "aug-translate-f3",
+      "folds": 3,
+      "macro_f1": 0.9282507652157476,
+      "baseline_same_folds": 0.9289421164614114,
+      "mean_paired_diff": -0.0013742871908506056,
+      "folds_better": "2/3",
+      "non_en_acc": 0.9375,
+      "baseline_non_en_acc": 0.9375,
+      "other_f1": 0.896551724137931,
+      "baseline_other_f1": 0.9333333333333333,
+      "verdict": "no detectable difference"
+    },
+    {
+      "variant": "hier0.5",
+      "folds": 5,
+      "macro_f1": 0.9052365556419519,
+      "baseline_same_folds": 0.919647191278988,
+      "mean_paired_diff": -0.014184627005834427,
+      "folds_better": "1/5",
+      "non_en_acc": 0.9423076923076923,
+      "baseline_non_en_acc": 0.9423076923076923,
+      "other_f1": 0.8936170212765957,
+      "baseline_other_f1": 0.9387755102040817,
+      "verdict": "hurts"
+    },
+    {
+      "variant": "hier1.0",
+      "folds": 5,
+      "macro_f1": 0.9022380957191963,
+      "baseline_same_folds": 0.919647191278988,
+      "mean_paired_diff": -0.01935461224934907,
+      "folds_better": "0/5",
+      "non_en_acc": 0.9230769230769231,
+      "baseline_non_en_acc": 0.9423076923076923,
+      "other_f1": 0.8695652173913043,
+      "baseline_other_f1": 0.9387755102040817,
+      "verdict": "hurts"
+    },
+    {
+      "variant": "oe",
+      "folds": 5,
+      "macro_f1": 0.9133465557662083,
+      "baseline_same_folds": 0.919647191278988,
+      "mean_paired_diff": -0.006050812649109871,
+      "folds_better": "2/5",
+      "non_en_acc": 0.9423076923076923,
+      "baseline_non_en_acc": 0.9423076923076923,
+      "other_f1": 0.8936170212765957,
+      "baseline_other_f1": 0.9387755102040817,
+      "verdict": "no detectable difference"
+    }
+  ],
+  "trackB_oe": [
+    {
+      "run": "model_b",
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.7909615384615385,
+      "test_retention": 0.9384615384615385,
+      "rejection_recall": 0.2625,
+      "known_macro_f1": 0.9409090909090908
+    },
+    {
+      "run": "model_b",
+      "scorer": "energy",
+      "AUROC": 0.8113461538461538,
+      "test_retention": 0.9230769230769231,
+      "rejection_recall": 0.425,
+      "known_macro_f1": 0.9409090909090908
+    },
+    {
+      "run": "model_b",
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8201923076923078,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall": 0.3375,
+      "known_macro_f1": 0.9409090909090908
+    },
+    {
+      "run": "model_b",
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8126923076923077,
+      "test_retention": 0.9230769230769231,
+      "rejection_recall": 0.2875,
+      "known_macro_f1": 0.9409090909090908
+    },
+    {
+      "run": "model_b_oe",
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.7759615384615384,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall": 0.4125,
+      "known_macro_f1": 0.9442424242424241
+    },
+    {
+      "run": "model_b_oe",
+      "scorer": "energy",
+      "AUROC": 0.7813461538461538,
+      "test_retention": 0.9538461538461539,
+      "rejection_recall": 0.375,
+      "known_macro_f1": 0.9442424242424241
+    },
+    {
+      "run": "model_b_oe",
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8451923076923078,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall": 0.425,
+      "known_macro_f1": 0.9442424242424241
+    },
+    {
+      "run": "model_b_oe",
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8396153846153847,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall": 0.45,
+      "known_macro_f1": 0.9442424242424241
+    },
+    {
+      "run": "model_b_near",
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.7436507936507937,
+      "test_retention": 0.9583333333333334,
+      "rejection_recall": 0.14285714285714285,
+      "known_macro_f1": 0.9031680440771349
+    },
+    {
+      "run": "model_b_near",
+      "scorer": "energy",
+      "AUROC": 0.8035714285714286,
+      "test_retention": 0.9305555555555556,
+      "rejection_recall": 0.2,
+      "known_macro_f1": 0.9031680440771349
+    },
+    {
+      "run": "model_b_near",
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8535714285714285,
+      "test_retention": 0.8888888888888888,
+      "rejection_recall": 0.34285714285714286,
+      "known_macro_f1": 0.9031680440771349
+    },
+    {
+      "run": "model_b_near",
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8003968253968253,
+      "test_retention": 0.9305555555555556,
+      "rejection_recall": 0.17142857142857143,
+      "known_macro_f1": 0.9031680440771349
+    },
+    {
+      "run": "model_b_near_oe",
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.8734126984126984,
+      "test_retention": 0.9722222222222222,
+      "rejection_recall": 0.4857142857142857,
+      "known_macro_f1": 0.9260083444716148
+    },
+    {
+      "run": "model_b_near_oe",
+      "scorer": "energy",
+      "AUROC": 0.8928571428571428,
+      "test_retention": 0.9305555555555556,
+      "rejection_recall": 0.4857142857142857,
+      "known_macro_f1": 0.9260083444716148
+    },
+    {
+      "run": "model_b_near_oe",
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8634920634920634,
+      "test_retention": 0.9166666666666666,
+      "rejection_recall": 0.37142857142857144,
+      "known_macro_f1": 0.9260083444716148
+    },
+    {
+      "run": "model_b_near_oe",
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8611111111111112,
+      "test_retention": 0.9722222222222222,
+      "rejection_recall": 0.2857142857142857,
+      "known_macro_f1": 0.9260083444716148
+    }
+  ],
+  "seeds": {
+    "runs": {
+      "model_a": {
+        "macro_f1": 0.8847787288963759,
+        "accuracy": 0.8961038961038961
+      },
+      "model_a_s43": {
+        "macro_f1": 0.9278619528619526,
+        "accuracy": 0.935064935064935
+      },
+      "model_a_s44": {
+        "macro_f1": 0.9461482961482961,
+        "accuracy": 0.948051948051948
+      }
+    },
+    "macro_f1_mean": 0.9195963259688749,
+    "macro_f1_std": 0.031508671617884294,
+    "note": "seed 42 is the declared submission; other seeds only quantify training variance (G10)"
+  },
+  "shortcut_probe": {
+    "model_a": {
+      "counterfactual_flip_rate": 0.45202020202020204,
+      "counterfactual_flip_to_new_prefix_class": 0.43686868686868685,
+      "test_only_flip_rate": 0.5576923076923077
+    },
+    "model_a_idswap": {
+      "counterfactual_flip_rate": 0.022727272727272728,
+      "counterfactual_flip_to_new_prefix_class": 0.030303030303030304,
+      "test_only_flip_rate": 0.11538461538461539
+    }
+  },
+  "active_learning": [
+    {
+      "strategy": "least_confidence",
+      "fraction": 0.1,
+      "n": 34.0,
+      "f1": 0.5256470134784099,
+      "f1_std": 0.02442639685113613
+    },
+    {
+      "strategy": "least_confidence",
+      "fraction": 0.2,
+      "n": 68.0,
+      "f1": 0.6809400638348007,
+      "f1_std": 0.06923127283121379
+    },
+    {
+      "strategy": "least_confidence",
+      "fraction": 0.35,
+      "n": 118.33333333333333,
+      "f1": 0.7575252121501056,
+      "f1_std": 0.05896583245329189
+    },
+    {
+      "strategy": "least_confidence",
+      "fraction": 0.5,
+      "n": 169.33333333333334,
+      "f1": 0.8555439632129519,
+      "f1_std": 0.05546338521039663
+    },
+    {
+      "strategy": "least_confidence",
+      "fraction": 0.75,
+      "n": 254.0,
+      "f1": 0.9204652142281141,
+      "f1_std": 0.020991382141803912
+    },
+    {
+      "strategy": "least_confidence",
+      "fraction": 1.0,
+      "n": 338.3333333333333,
+      "f1": 0.904763783162906,
+      "f1_std": 0.03741899538747011
+    },
+    {
+      "strategy": "random",
+      "fraction": 0.1,
+      "n": 34.0,
+      "f1": 0.5163359554484426,
+      "f1_std": 0.06281370127833297
+    },
+    {
+      "strategy": "random",
+      "fraction": 0.2,
+      "n": 68.0,
+      "f1": 0.6370929660784733,
+      "f1_std": 0.03215898388402294
+    },
+    {
+      "strategy": "random",
+      "fraction": 0.35,
+      "n": 118.33333333333333,
+      "f1": 0.7430740780547281,
+      "f1_std": 0.04529158583775436
+    },
+    {
+      "strategy": "random",
+      "fraction": 0.5,
+      "n": 169.33333333333334,
+      "f1": 0.801133150682776,
+      "f1_std": 0.02765224434862713
+    },
+    {
+      "strategy": "random",
+      "fraction": 0.75,
+      "n": 254.0,
+      "f1": 0.8541796252709566,
+      "f1_std": 0.03486009690049864
+    },
+    {
+      "strategy": "random",
+      "fraction": 1.0,
+      "n": 338.3333333333333,
+      "f1": 0.9028677183669446,
+      "f1_std": 0.0451932329216696
+    }
+  ],
+  "llm": {
+    "llm-gemini-3.5-flash-lite-closed-0shot": {
+      "macro_f1": 0.8852564102564102,
+      "accuracy": 0.8831168831168831,
+      "rejection_recall": null,
+      "retention": null,
+      "known_accuracy": null,
+      "usage": {
+        "mean_in_tokens": 491.06493506493507,
+        "mean_out_tokens": 4.5064935064935066,
+        "latency_p50_s": 0.9710072090001631,
+        "latency_p95_s": 1.395913558000757
+      }
+    },
+    "llm-gemini-3.5-flash-lite-closed-3shot": {
+      "macro_f1": 0.9586080586080586,
+      "accuracy": 0.961038961038961,
+      "rejection_recall": null,
+      "retention": null,
+      "known_accuracy": null,
+      "usage": {
+        "mean_in_tokens": 1327.064935064935,
+        "mean_out_tokens": 4.233766233766234,
+        "latency_p50_s": 1.1635564590014837,
+        "latency_p95_s": 1.588483341599931
+      }
+    },
+    "llm-gemini-3.5-flash-lite-open-3shot": {
+      "macro_f1": null,
+      "accuracy": null,
+      "rejection_recall": 0.025,
+      "retention": 1.0,
+      "known_accuracy": 0.9538461538461539,
+      "usage": {
+        "mean_in_tokens": 1145.606896551724,
+        "mean_out_tokens": 4.489655172413793,
+        "latency_p50_s": 1.1564896250001766,
+        "latency_p95_s": 1.643487517199537
+      }
+    }
+  }
+}

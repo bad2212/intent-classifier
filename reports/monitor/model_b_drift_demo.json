@@ -1,0 +1,38 @@
+[
+  {
+    "batch": "known-intent traffic (test)",
+    "n": 65,
+    "confidence_ks_p": 0.930256472385258,
+    "confidence_psi": 0.21149235537698066,
+    "unknown_rate": 0.06153846153846154,
+    "unknown_rate_expected": 0.05,
+    "unknown_rate_p": 0.4099874820217808,
+    "intent_mix_chi2": 0.6019400754561275,
+    "intent_mix_p": 1.0,
+    "intent_mix_psi": 0.008904194496556123,
+    "non_english_share": 0.1076923076923077,
+    "non_english_share_train": 0.13058419243986255,
+    "language_mix_p": 0.7139291441733031,
+    "embedding_mmd2": -0.00830918550491333,
+    "embedding_mmd_p": 0.9940029985007496,
+    "alerts": []
+  },
+  {
+    "batch": "traffic with 40% never-seen intents",
+    "n": 65,
+    "confidence_ks_p": 0.01719186848140286,
+    "confidence_psi": 0.5484424748109203,
+    "unknown_rate": 0.09230769230769231,
+    "unknown_rate_expected": 0.05,
+    "unknown_rate_p": 0.10587428913705174,
+    "intent_mix_chi2": 13.643787829455881,
+    "intent_mix_p": 0.13617276544691062,
+    "intent_mix_psi": 0.21416688958900393,
+    "non_english_share": 0.15384615384615385,
+    "non_english_share_train": 0.13058419243986255,
+    "language_mix_p": 0.5792937486262388,
+    "embedding_mmd2": 0.006486475467681885,
+    "embedding_mmd_p": 0.11344327836081959,
+    "alerts": []
+  }
+]

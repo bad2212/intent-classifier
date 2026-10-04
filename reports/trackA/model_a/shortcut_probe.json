@@ -1,0 +1,40 @@
+{
+  "messages_with_id": 99,
+  "share_of_dataset": 0.198,
+  "label_equals_prefix_class": 0.8080808080808081,
+  "accuracy_on_id_messages": 0.98989898989899,
+  "errors_on_id_messages": 1,
+  "errors_predicting_prefix_class": 0,
+  "counterfactual_flip_rate": 0.45202020202020204,
+  "counterfactual_flip_to_new_prefix_class": 0.43686868686868685,
+  "flip_rate_when_base_correct": 0.45408163265306123,
+  "by_new_prefix": {
+    "APT": {
+      "flip_rate": 0.411,
+      "to_prefix_class": 0.333,
+      "n": 90
+    },
+    "DOC": {
+      "flip_rate": 0.622,
+      "to_prefix_class": 0.678,
+      "n": 90
+    },
+    "LD": {
+      "flip_rate": 0.255,
+      "to_prefix_class": 0.236,
+      "n": 55
+    },
+    "PO": {
+      "flip_rate": 0.467,
+      "to_prefix_class": 0.467,
+      "n": 75
+    },
+    "TR": {
+      "flip_rate": 0.43,
+      "to_prefix_class": 0.395,
+      "n": 86
+    }
+  },
+  "note": "model_a saw train rows; flip rates are reported for all splits and for test only",
+  "test_only_flip_rate": 0.5576923076923077
+}

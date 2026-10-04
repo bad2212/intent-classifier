@@ -1,0 +1,254 @@
+{
+  "calibration": {
+    "val_raw": {
+      "ece": 0.35609021606413943,
+      "nll": 0.6780373454093933
+    },
+    "val_scaled": {
+      "ece": 0.029955695726369524,
+      "nll": 0.31561869382858276
+    },
+    "test_raw": {
+      "ece": 0.33071354205732223,
+      "nll": 0.6767157316207886
+    },
+    "test_scaled": {
+      "ece": 0.051439836427762904,
+      "nll": 0.2946459949016571
+    }
+  },
+  "test": {
+    "confusion_pairs": [
+      {
+        "true": "other",
+        "pred": "chitchat",
+        "n": 1
+      },
+      {
+        "true": "orders",
+        "pred": "knowledge_base",
+        "n": 1
+      },
+      {
+        "true": "other",
+        "pred": "shipment_information.disruptions",
+        "n": 1
+      },
+      {
+        "true": "yard_management",
+        "pred": "appointment_manager",
+        "n": 1
+      },
+      {
+        "true": "other",
+        "pred": "customer_support",
+        "n": 1
+      },
+      {
+        "true": "shipment_information.analytics",
+        "pred": "shipment_information.realtime_query",
+        "n": 1
+      },
+      {
+        "true": "document_processing",
+        "pred": "knowledge_base",
+        "n": 1
+      },
+      {
+        "true": "shipment_information.analytics",
+        "pred": "knowledge_base",
+        "n": 1
+      }
+    ],
+    "sibling_matrix": {
+      "(non-shipment)": {
+        "analytics": 1,
+        "disruptions": 0,
+        "realtime_query": 0
+      },
+      "analytics": {
+        "analytics": 8,
+        "disruptions": 0,
+        "realtime_query": 0
+      },
+      "disruptions": {
+        "analytics": 0,
+        "disruptions": 5,
+        "realtime_query": 0
+      },
+      "realtime_query": {
+        "analytics": 1,
+        "disruptions": 0,
+        "realtime_query": 8
+      }
+    },
+    "per_language_accuracy": {
+      "de": {
+        "mean": 1.0,
+        "size": 1
+      },
+      "en": {
+        "mean": 0.877,
+        "size": 65
+      },
+      "es": {
+        "mean": 1.0,
+        "size": 3
+      },
+      "fr": {
+        "mean": 1.0,
+        "size": 3
+      },
+      "it": {
+        "mean": 1.0,
+        "size": 1
+      },
+      "und": {
+        "mean": 1.0,
+        "size": 1
+      },
+      "zh": {
+        "mean": 1.0,
+        "size": 3
+      }
+    },
+    "mean_conf_correct": 0.9371481537818909,
+    "mean_conf_wrong": 0.6153408885002136
+  },
+  "oof": {
+    "n": 423,
+    "confusion_pairs": [
+      {
+        "true": "customer_support",
+        "pred": "appointment_manager",
+        "n": 3
+      },
+      {
+        "true": "appointment_manager",
+        "pred": "customer_support",
+        "n": 3
+      },
+      {
+        "true": "knowledge_base",
+        "pred": "shipment_information.realtime_query",
+        "n": 2
+      },
+      {
+        "true": "other",
+        "pred": "shipment_information.disruptions",
+        "n": 1
+      },
+      {
+        "true": "customer_support",
+        "pred": "orders",
+        "n": 1
+      },
+      {
+        "true": "shipment_information.disruptions",
+        "pred": "shipment_information.realtime_query",
+        "n": 1
+      },
+      {
+        "true": "knowledge_base",
+        "pred": "shipment_information.disruptions",
+        "n": 1
+      },
+      {
+        "true": "orders",
+        "pred": "shipment_information.analytics",
+        "n": 1
+      },
+      {
+        "true": "customer_support",
+        "pred": "document_processing",
+        "n": 1
+      },
+      {
+        "true": "shipment_information.realtime_query",
+        "pred": "shipment_information.analytics",
+        "n": 1
+      },
+      {
+        "true": "ai_agent_performance",
+        "pred": "customer_support",
+        "n": 1
+      },
+      {
+        "true": "knowledge_base",
+        "pred": "customer_support",
+        "n": 1
+      },
+      {
+        "true": "customer_support",
+        "pred": "shipment_information.realtime_query",
+        "n": 1
+      },
+      {
+        "true": "document_processing",
+        "pred": "orders",
+        "n": 1
+      },
+      {
+        "true": "shipment_information.analytics",
+        "pred": "orders",
+        "n": 1
+      }
+    ],
+    "sibling_matrix": {
+      "(non-shipment)": {
+        "analytics": 1,
+        "disruptions": 0,
+        "realtime_query": 0
+      },
+      "analytics": {
+        "analytics": 44,
+        "disruptions": 0,
+        "realtime_query": 1
+      },
+      "disruptions": {
+        "analytics": 0,
+        "disruptions": 29,
+        "realtime_query": 0
+      },
+      "realtime_query": {
+        "analytics": 0,
+        "disruptions": 1,
+        "realtime_query": 46
+      }
+    },
+    "per_language_accuracy": {
+      "ar": {
+        "mean": 1.0,
+        "size": 1
+      },
+      "de": {
+        "mean": 0.909,
+        "size": 11
+      },
+      "en": {
+        "mean": 0.916,
+        "size": 370
+      },
+      "es": {
+        "mean": 1.0,
+        "size": 19
+      },
+      "fr": {
+        "mean": 0.867,
+        "size": 15
+      },
+      "nl": {
+        "mean": 1.0,
+        "size": 2
+      },
+      "und": {
+        "mean": 1.0,
+        "size": 1
+      },
+      "zh": {
+        "mean": 1.0,
+        "size": 4
+      }
+    }
+  }
+}

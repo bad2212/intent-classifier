@@ -1,0 +1,120 @@
+{
+  "model": "tfidf_char2-5+word1-2_logreg",
+  "val_grid": {
+    "0.3": 0.8016224516224515,
+    "1": 0.8016224516224515,
+    "3": 0.8016224516224515,
+    "10": 0.7768971768971769,
+    "30": 0.7768971768971769
+  },
+  "best_C": 0.3,
+  "val": {
+    "macro_f1": 0.8016224516224515,
+    "accuracy": 0.8157894736842105,
+    "n": 76
+  },
+  "test": {
+    "macro_f1": 0.6939589005765475,
+    "accuracy": 0.7272727272727273,
+    "n": 77,
+    "macro_f1_ci": [
+      0.5669427291118467,
+      0.7803918708458351
+    ],
+    "accuracy_ci": [
+      0.6233766233766234,
+      0.8181818181818182
+    ],
+    "slices": {
+      "english": {
+        "macro_f1": 0.7465659340659342,
+        "accuracy": 0.7727272727272727,
+        "n": 66
+      },
+      "non_english": {
+        "macro_f1": 0.36666666666666664,
+        "accuracy": 0.45454545454545453,
+        "n": 11
+      }
+    },
+    "coarse": {
+      "macro_f1": 0.6699425574425574,
+      "accuracy": 0.7402597402597403,
+      "n": 77
+    },
+    "per_class": {
+      "ai_agent_performance": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "support": 6.0
+      },
+      "appointment_manager": {
+        "precision": 0.75,
+        "recall": 0.8571,
+        "f1": 0.8,
+        "support": 7.0
+      },
+      "chitchat": {
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692,
+        "support": 5.0
+      },
+      "customer_support": {
+        "precision": 0.8,
+        "recall": 0.6667,
+        "f1": 0.7273,
+        "support": 6.0
+      },
+      "document_processing": {
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6,
+        "support": 6.0
+      },
+      "knowledge_base": {
+        "precision": 0.4,
+        "recall": 0.3333,
+        "f1": 0.3636,
+        "support": 6.0
+      },
+      "orders": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "support": 7.0
+      },
+      "other": {
+        "precision": 0.3333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "support": 5.0
+      },
+      "shipment_information.analytics": {
+        "precision": 0.7273,
+        "recall": 0.8,
+        "f1": 0.7619,
+        "support": 10.0
+      },
+      "shipment_information.disruptions": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "support": 5.0
+      },
+      "shipment_information.realtime_query": {
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "support": 8.0
+      },
+      "yard_management": {
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6,
+        "support": 6.0
+      }
+    }
+  }
+}

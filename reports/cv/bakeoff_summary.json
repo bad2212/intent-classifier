@@ -1,0 +1,140 @@
+{
+  "rule": "best pooled OOF macro-F1; if the top two are within 1 fold-std, take the smaller/faster one",
+  "winner": "cv-mpnet-lr5e-5",
+  "best_raw": "cv-mpnet-lr5e-5",
+  "top_two_within_1std": true,
+  "paired_vs_winner": {
+    "cv-xlmr-lr5e-5": {
+      "mean_diff": 0.013723617713555791,
+      "folds_winner_better": 5,
+      "folds_tied": 0,
+      "n_folds": 5
+    },
+    "cv-xlmr-lr2e-5": {
+      "mean_diff": 0.02020554938124599,
+      "folds_winner_better": 3,
+      "folds_tied": 0,
+      "n_folds": 5
+    },
+    "cv-mpnet-lr2e-5": {
+      "mean_diff": 0.026172418625978966,
+      "folds_winner_better": 5,
+      "folds_tied": 0,
+      "n_folds": 5
+    },
+    "cv-minilm-lr5e-5": {
+      "mean_diff": 0.02699596112521805,
+      "folds_winner_better": 5,
+      "folds_tied": 0,
+      "n_folds": 5
+    },
+    "cv-minilm-lr2e-5": {
+      "mean_diff": 0.05345246600664555,
+      "folds_winner_better": 4,
+      "folds_tied": 0,
+      "n_folds": 5
+    }
+  },
+  "configs": [
+    {
+      "name": "cv-mpnet-lr5e-5",
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "lr": 5e-05,
+      "params_M": 278,
+      "best_epoch": 7,
+      "oof_macro_f1": 0.919647191278988,
+      "fold_mean": 0.9200897000316506,
+      "fold_std": 0.027644447408627346,
+      "oof_accuracy": 0.9196217494089834,
+      "non_en_acc": 0.9423076923076923,
+      "en_acc": 0.9164420485175202,
+      "coarse_acc": 0.9243498817966903,
+      "top_two": true
+    },
+    {
+      "name": "cv-xlmr-lr5e-5",
+      "model": "FacebookAI/xlm-roberta-base",
+      "lr": 5e-05,
+      "params_M": 278,
+      "best_epoch": 11,
+      "oof_macro_f1": 0.9078864917383113,
+      "fold_mean": 0.9063660823180948,
+      "fold_std": 0.029150721336305377,
+      "oof_accuracy": 0.9101654846335697,
+      "non_en_acc": 0.9230769230769231,
+      "en_acc": 0.9083557951482479,
+      "coarse_acc": 0.9101654846335697,
+      "top_two": true
+    },
+    {
+      "name": "cv-xlmr-lr2e-5",
+      "model": "FacebookAI/xlm-roberta-base",
+      "lr": 2e-05,
+      "params_M": 278,
+      "best_epoch": 14,
+      "oof_macro_f1": 0.8998597925304033,
+      "fold_mean": 0.8998841506504046,
+      "fold_std": 0.024432634877342173,
+      "oof_accuracy": 0.8983451536643026,
+      "non_en_acc": 0.9038461538461539,
+      "en_acc": 0.8975741239892183,
+      "coarse_acc": 0.9054373522458629,
+      "top_two": false
+    },
+    {
+      "name": "cv-mpnet-lr2e-5",
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "lr": 2e-05,
+      "params_M": 278,
+      "best_epoch": 9,
+      "oof_macro_f1": 0.89402628335228,
+      "fold_mean": 0.8939172814056715,
+      "fold_std": 0.03136563034195386,
+      "oof_accuracy": 0.8936170212765957,
+      "non_en_acc": 0.9230769230769231,
+      "en_acc": 0.889487870619946,
+      "coarse_acc": 0.9078014184397163,
+      "top_two": false
+    },
+    {
+      "name": "cv-minilm-lr5e-5",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 5e-05,
+      "params_M": 118,
+      "best_epoch": 12,
+      "oof_macro_f1": 0.8935287873894381,
+      "fold_mean": 0.8930937389064326,
+      "fold_std": 0.029060014757440227,
+      "oof_accuracy": 0.8936170212765957,
+      "non_en_acc": 0.8846153846153846,
+      "en_acc": 0.894878706199461,
+      "coarse_acc": 0.8983451536643026,
+      "top_two": false
+    },
+    {
+      "name": "cv-minilm-lr2e-5",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "lr": 2e-05,
+      "params_M": 118,
+      "best_epoch": 15,
+      "oof_macro_f1": 0.8664460503003703,
+      "fold_mean": 0.8666372340250049,
+      "fold_std": 0.02530273430554373,
+      "oof_accuracy": 0.8676122931442081,
+      "non_en_acc": 0.8846153846153846,
+      "en_acc": 0.8652291105121294,
+      "coarse_acc": 0.8888888888888888,
+      "top_two": false
+    }
+  ],
+  "baseline": {
+    "epoch": null,
+    "pooled_macro_f1": 0.7278274813075943,
+    "pooled_accuracy": 0.7470449172576832,
+    "fold_macro_f1_mean": 0.7264069446977645,
+    "fold_macro_f1_std": 0.029176122613957554,
+    "non_english_accuracy": 0.4807692307692308,
+    "english_accuracy": 0.784366576819407,
+    "coarse_accuracy": 0.7801418439716312
+  }
+}

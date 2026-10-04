@@ -1,0 +1,240 @@
+{
+  "n_written": 108,
+  "n_kept": 77,
+  "dropped": [
+    {
+      "text": "need a spot price for a 53ft dry van Chicago to Atlanta for friday",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5490000247955322,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "generate a quote for an expedited team truck Detroit to Laredo",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.39100000262260437,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "how much CO2 would we save by switching the Phoenix lane to intermodal",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5329999923706055,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "the consignee refused 2 cases due to water damage \u2014 start a claim pls",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.35199999809265137,
+      "nn_label": "document_processing",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "what's the deadline to submit a concealed damage claim under Carmack",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.42899999022483826,
+      "nn_label": "appointment_manager",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "calculate the claim amount for the broken glassware on that delivery",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5210000276565552,
+      "nn_label": "document_processing",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "quiero presentar una reclamaci\u00f3n por mercanc\u00eda da\u00f1ada en el env\u00edo de ayer",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.45100000500679016,
+      "nn_label": "ai_agent_performance",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "how many units of SKU 44812 do we have on hand across all warehouses",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5680000185966492,
+      "nn_label": "yard_management",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "combien d'unit\u00e9s de l'article 5521 reste-t-il en stock \u00e0 Lille",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5189999938011169,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "plan the most efficient route for 7 stops in the Bay Area tomorrow morning",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5130000114440918,
+      "nn_label": "shipment_information.analytics",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "build a multi-stop route for the new store openings in Arizona",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.4059999883174896,
+      "nn_label": "orders",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "redesign our delivery zones around the new hub in Indianapolis",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5249999761581421,
+      "nn_label": "appointment_manager",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "reconcile accessorial fees we were charged last month against the contract",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.49799999594688416,
+      "nn_label": "shipment_information.analytics",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "how much did we pay carriers in total for accessorials this year",
+      "drop_reason": "near-duplicate of a dataset row (cos>=0.7)",
+      "nn_sim": 0.722000002861023,
+      "nn_label": "shipment_information.analytics",
+      "nearest_class": "shipment_information.analytics"
+    },
+    {
+      "text": "which drivers are close to violating hours of service rules this week",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5320000052452087,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "show ELD log violations for our private fleet last month",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.4959999918937683,
+      "nn_label": "appointment_manager",
+      "nearest_class": "document_processing"
+    },
+    {
+      "text": "send the Kansas City lanes out for bid to five carriers",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.48399999737739563,
+      "nn_label": "shipment_information.realtime_query",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "build a waterfall tender sequence for our new Midwest lanes",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5450000166893005,
+      "nn_label": "shipment_information.disruptions",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "compare the bids we got for the Southeast lanes and recommend awards",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.578000009059906,
+      "nn_label": "orders",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "set up a mini-bid for our seasonal produce lanes",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.48100000619888306,
+      "nn_label": "yard_management",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "lancer un appel d'offres pour nos lignes de transport en Europe",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.6620000004768372,
+      "nn_label": "shipment_information.disruptions",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "reserve space on an air freight flight from Frankfurt to Chicago",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.5659999847412109,
+      "nn_label": "appointment_manager",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "buchen Sie einen Container von Hamburg nach Shanghai f\u00fcr n\u00e4chste Woche",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.6430000066757202,
+      "nn_label": "appointment_manager",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "predict next quarter's freight volume so we can plan capacity",
+      "drop_reason": "near-duplicate of a dataset row (cos>=0.7)",
+      "nn_sim": 0.7710000276565552,
+      "nn_label": "shipment_information.analytics",
+      "nearest_class": "shipment_information.analytics"
+    },
+    {
+      "text": "set up a geofence alert when the reefer temperature goes above 38F",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.4580000042915344,
+      "nn_label": "shipment_information.disruptions",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "pair the new temperature sensors with our trailers' telematics units",
+      "drop_reason": "keyword (protected class concept)",
+      "nn_sim": 0.4790000021457672,
+      "nn_label": "yard_management",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "configure shock sensors on our fragile electronics shipments",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.3919999897480011,
+      "nn_label": "shipment_information.disruptions",
+      "nearest_class": "shipment_information.disruptions"
+    },
+    {
+      "text": "which tractors are overdue for an oil change",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.4729999899864197,
+      "nn_label": "yard_management",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "find a tire shop near our driver stuck outside Amarillo",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.6000000238418579,
+      "nn_label": "yard_management",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "programar mantenimiento preventivo para el cami\u00f3n 305",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.6129999756813049,
+      "nn_label": "shipment_information.disruptions",
+      "nearest_class": "yard_management"
+    },
+    {
+      "text": "set up a pickup for 30 returned cartons from the Portland store",
+      "drop_reason": "nearest class centroid is a protected class",
+      "nn_sim": 0.546999990940094,
+      "nn_label": "shipment_information.analytics",
+      "nearest_class": "yard_management"
+    }
+  ],
+  "kept_nearest_class_counts": {
+    "shipment_information.analytics": 35,
+    "shipment_information.realtime_query": 14,
+    "knowledge_base": 8,
+    "appointment_manager": 8,
+    "orders": 6,
+    "customer_support": 4,
+    "ai_agent_performance": 2
+  },
+  "kept_lang_counts": {
+    "en": 69,
+    "es": 3,
+    "fr": 2,
+    "de": 2,
+    "zh": 1
+  },
+  "kept_topics": 16
+}

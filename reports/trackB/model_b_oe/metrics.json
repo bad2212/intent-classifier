@@ -1,0 +1,183 @@
+{
+  "run": "model_b_oe",
+  "holdout_classes": [
+    "yard_management",
+    "document_processing"
+  ],
+  "retention_target": 0.95,
+  "n_known_test": 65,
+  "n_unknown": 80,
+  "known_test_10way": {
+    "macro_f1": 0.9442424242424241,
+    "accuracy": 0.9538461538461539,
+    "n": 65
+  },
+  "unknowns_argmax_distribution": {
+    "appointment_manager": 18,
+    "shipment_information.realtime_query": 17,
+    "shipment_information.analytics": 13,
+    "ai_agent_performance": 12,
+    "knowledge_base": 9,
+    "customer_support": 8,
+    "orders": 2,
+    "shipment_information.disruptions": 1
+  },
+  "scorers": [
+    {
+      "scorer": "MSP (baseline)",
+      "AUROC": 0.7759615384615384,
+      "AUPR_unknown": 0.8283675983828386,
+      "unknown_accepted@95%retention(oracle)": 0.6625,
+      "tau(val)": -0.44493770599365234,
+      "val_retention": 0.953125,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall_strict": 0.4125,
+      "rejection_recall_lenient": 0.4125,
+      "rejection_recall[document_processing]": 0.3,
+      "rejection_recall[yard_management]": 0.525
+    },
+    {
+      "scorer": "MSP + temperature",
+      "AUROC": 0.7661538461538462,
+      "AUPR_unknown": 0.8158418441051579,
+      "unknown_accepted@95%retention(oracle)": 0.775,
+      "tau(val)": -0.7453194260597229,
+      "val_retention": 0.953125,
+      "test_retention": 0.9384615384615385,
+      "rejection_recall_strict": 0.35,
+      "rejection_recall_lenient": 0.35,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.425
+    },
+    {
+      "scorer": "max-logit",
+      "AUROC": 0.7759615384615384,
+      "AUPR_unknown": 0.8303393920324802,
+      "unknown_accepted@95%retention(oracle)": 0.6375,
+      "tau(val)": -1.8711498975753784,
+      "val_retention": 0.953125,
+      "test_retention": 0.9230769230769231,
+      "rejection_recall_strict": 0.3625,
+      "rejection_recall_lenient": 0.3625,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.45
+    },
+    {
+      "scorer": "energy",
+      "AUROC": 0.7813461538461538,
+      "AUPR_unknown": 0.8405860517852484,
+      "unknown_accepted@95%retention(oracle)": 0.55,
+      "tau(val)": -2.7390546798706055,
+      "val_retention": 0.953125,
+      "test_retention": 0.9538461538461539,
+      "rejection_recall_strict": 0.375,
+      "rejection_recall_lenient": 0.375,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.475
+    },
+    {
+      "scorer": "Mahalanobis [cls]",
+      "AUROC": 0.8451923076923078,
+      "AUPR_unknown": 0.8030073707017394,
+      "unknown_accepted@95%retention(oracle)": 0.9,
+      "tau(val)": 10038.2841796875,
+      "val_retention": 0.953125,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall_strict": 0.425,
+      "rejection_recall_lenient": 0.425,
+      "rejection_recall[document_processing]": 0.35,
+      "rejection_recall[yard_management]": 0.5
+    },
+    {
+      "scorer": "kNN k=1 [cls]",
+      "AUROC": 0.8482692307692308,
+      "AUPR_unknown": 0.854296921953672,
+      "unknown_accepted@95%retention(oracle)": 0.6125,
+      "tau(val)": -0.8232760429382324,
+      "val_retention": 0.953125,
+      "test_retention": 0.8923076923076924,
+      "rejection_recall_strict": 0.475,
+      "rejection_recall_lenient": 0.475,
+      "rejection_recall[document_processing]": 0.3,
+      "rejection_recall[yard_management]": 0.65
+    },
+    {
+      "scorer": "kNN k=5 [cls]",
+      "AUROC": 0.8396153846153847,
+      "AUPR_unknown": 0.855191532541179,
+      "unknown_accepted@95%retention(oracle)": 0.6375,
+      "tau(val)": -0.7841576933860779,
+      "val_retention": 0.953125,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall_strict": 0.45,
+      "rejection_recall_lenient": 0.45,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.625
+    },
+    {
+      "scorer": "kNN k=10 [cls]",
+      "AUROC": 0.8321153846153847,
+      "AUPR_unknown": 0.8482220543277604,
+      "unknown_accepted@95%retention(oracle)": 0.65,
+      "tau(val)": -0.7665326595306396,
+      "val_retention": 0.953125,
+      "test_retention": 0.9076923076923077,
+      "rejection_recall_strict": 0.4375,
+      "rejection_recall_lenient": 0.4375,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.6
+    },
+    {
+      "scorer": "Mahalanobis [mean]",
+      "AUROC": 0.8446153846153847,
+      "AUPR_unknown": 0.7893565718143929,
+      "unknown_accepted@95%retention(oracle)": 0.925,
+      "tau(val)": 8587.583984375,
+      "val_retention": 0.953125,
+      "test_retention": 0.8923076923076924,
+      "rejection_recall_strict": 0.35,
+      "rejection_recall_lenient": 0.35,
+      "rejection_recall[document_processing]": 0.325,
+      "rejection_recall[yard_management]": 0.375
+    },
+    {
+      "scorer": "kNN k=1 [mean]",
+      "AUROC": 0.8467307692307693,
+      "AUPR_unknown": 0.8299641369936029,
+      "unknown_accepted@95%retention(oracle)": 0.725,
+      "tau(val)": -0.8061438798904419,
+      "val_retention": 0.953125,
+      "test_retention": 0.9230769230769231,
+      "rejection_recall_strict": 0.4375,
+      "rejection_recall_lenient": 0.4375,
+      "rejection_recall[document_processing]": 0.325,
+      "rejection_recall[yard_management]": 0.55
+    },
+    {
+      "scorer": "kNN k=5 [mean]",
+      "AUROC": 0.8311538461538461,
+      "AUPR_unknown": 0.8218196110345478,
+      "unknown_accepted@95%retention(oracle)": 0.7,
+      "tau(val)": -0.7722206115722656,
+      "val_retention": 0.953125,
+      "test_retention": 0.8923076923076924,
+      "rejection_recall_strict": 0.4375,
+      "rejection_recall_lenient": 0.4375,
+      "rejection_recall[document_processing]": 0.325,
+      "rejection_recall[yard_management]": 0.55
+    },
+    {
+      "scorer": "kNN k=10 [mean]",
+      "AUROC": 0.8217307692307693,
+      "AUPR_unknown": 0.8133766787475646,
+      "unknown_accepted@95%retention(oracle)": 0.7125,
+      "tau(val)": -0.7339714765548706,
+      "val_retention": 0.953125,
+      "test_retention": 0.8923076923076924,
+      "rejection_recall_strict": 0.4,
+      "rejection_recall_lenient": 0.4,
+      "rejection_recall[document_processing]": 0.275,
+      "rejection_recall[yard_management]": 0.525
+    }
+  ]
+}
